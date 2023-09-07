@@ -84,13 +84,39 @@ class TeamMatches extends Component {
     </div>
   )
 
-  render() {
-    const {isLoading} = this.state
+  getRouteClassName = () => {
     const {match} = this.props
     const {params} = match
     const {id} = params
+
+    switch (id) {
+      case 'RCB':
+        return 'rcb'
+      case 'KKR':
+        return 'kkr'
+      case 'KXP':
+        return 'kxp'
+      case 'CSK':
+        return 'csk'
+      case 'RR':
+        return 'rr'
+      case 'MI':
+        return 'mi'
+      case 'SRH':
+        return 'srh'
+      case 'DC':
+        return 'dc'
+      default:
+        return ''
+    }
+  }
+
+  render() {
+    const {isLoading} = this.state
+    const className = `app-team-matches-container ${this.getRouteClassName()}`
+
     return (
-      <div className={`app-team-matches-container ${id}`}>
+      <div className={className}>
         {isLoading ? this.renderLoader() : this.renderTeamMatches()}
       </div>
     )

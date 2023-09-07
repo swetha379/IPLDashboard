@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 768px) {
   .team-matches-container {
-    margin-top: 56px;
+    margin-top: 96px;
     max-width: 1110px;
   }
 }
@@ -28,43 +28,44 @@
   align-items: center;
 }
 
-.RCB {
+.rcb {
   background: linear-gradient(to top, #1e293b, #a4261d);
 }
 
-.KKR {
+.kkr {
   background: linear-gradient(to top, #1e293b, #5755a7);
 }
 
-.KXP {
+.kxp {
   background: linear-gradient(to top, #1e293b, #d91c1f);
 }
 
-.CSK {
+.csk {
   background: linear-gradient(to top, #1e293b, #f7db00);
 }
 
-.RR {
+.rr {
   background: linear-gradient(to top, #1e293b, #da237b);
 }
 
-.MI {
+.mi {
   background: linear-gradient(to top, #1e293b, #13418b);
 }
 
-.SH {
+.srh {
   background: linear-gradient(to top, #1e293b, #f26d22);
 }
 
-.DC {
+.dc {
   background: linear-gradient(to top, #1e293b, #4f5db0);
 }
 
 .recent-matches-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 0;
   margin-top: 24px;
-  width: 100%;
 }
 
 @media screen and (max-width: 767px) {

@@ -21,7 +21,9 @@
 @media screen and (min-width: 768px) {
   .team-card {
     padding: 20px 30px 20px 30px;
-    min-height: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
   }
   .team-card-image {
     width: 80px;
@@ -40,6 +42,13 @@
     min-height: 150px;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .team-card-image {
+    width: 150px;
+    height: 150px;
   }
 }
 
